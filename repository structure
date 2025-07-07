@@ -1,0 +1,16 @@
+nyc-subway-ridership-forecasting/
+├── data/
+│   ├── raw/                # Raw MTA, weather, and event data
+│   ├── processed/          # Cleaned, merged datasets
+├── notebooks/
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_eda.ipynb
+│   ├── 03_modeling_arima.ipynb
+│   ├── 04_modeling_prophet.ipynb
+│   ├── 05_dashboard_streamlit.ipynb (optional)
+├── visuals/                # PNGs or interactive charts
+├── app/                    # Streamlit app (optional)
+│   ├── app.py
+├── README.md
+├── requirements.txt
+└── .gitignore
