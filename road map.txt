@@ -1,0 +1,26 @@
+1. Explore and Analyze the Data More Deeply
+* Check for seasonality (weekly, monthly, yearly patterns) in ridership.
+* Look at trends and any abrupt changes (e.g., pandemic effects).
+* Analyze correlations between ridership and other variables like weather or events.
+2. Integrate External Data Sources
+* Fetch and merge weather data (temperature, precipitation, etc.) for each date.
+* Add event indicators (holidays, major local events) as binary or categorical features.
+3. Feature Engineering
+* Create lag features (e.g., ridership on previous days) to capture temporal dependencies.
+* Add rolling statistics like rolling mean/median/std as additional features.
+* Generate time features (day of week, month, holiday flags).
+4. Modeling: Baseline and Advanced
+* Start with a SARIMA model on ridership to capture seasonality/trends.
+* Fit Prophet model with external regressors (weather, events).
+* Optionally try an LSTM for sequence learning if you want deep learning.
+5. Model Evaluation
+* Use appropriate metrics (MAE, RMSE) to evaluate your models.
+* Plot predicted vs actual ridership over time for visual validation.
+* Perform cross-validation or train/test splits carefully to avoid data leakage.
+6. Interpret Results and Insights
+* Identify key drivers from the models (e.g., temperature, events) and quantify their impact.
+* Analyze residuals to understand where models struggle.
+7. Visualization and Presentation
+* Build interactive dashboards (e.g., Streamlit) to visualize ridership forecasts with controls for weather or events.
+* Summarize findings clearly, emphasizing improvements and key factors.
+
